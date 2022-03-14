@@ -3,7 +3,6 @@ import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import About from '..';
 
-
 //ensures that after each test, there won't be any leftover memory data that could give false results
 afterEach(cleanup);
 
