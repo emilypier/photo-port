@@ -110,14 +110,16 @@ const PhotoList = ({ category }) => {
 
   const toggleModal = (image, i) => {
     setCurrentPhoto({...image, index: i});
-    //This will evaluate the short circuit in the JSX below  to render the modal
-    setIsModalOpen(true);
+    //This will evaluate the short circuit in the JSX below to render the modal
+    setIsModalOpen(!isModalOpen);
   }
 
 
   return (
     <div>
-      {isModalOpen && <Modal currentPhoto={currentPhoto} />}
+      {isModalOpen && (
+        <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+      )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
