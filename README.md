@@ -24,8 +24,7 @@ Clone this GitHub repository and install Node.js and Express.js.
 ## Usage
 Visit the deployed [application](https://emilypier.github.io/photo-port/).
 
-![Photo gallery](/docs/assets/note-taker-image.png)
-
+![Photo gallery](/public/photo-port.png)
 
 ## License
 This application is covered under MIT license.
